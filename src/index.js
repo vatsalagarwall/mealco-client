@@ -9,7 +9,7 @@ import { CartProvider } from './Context/CartContext';
 import axios from 'axios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const baseUrl = "https://real-cyan-bison-sock.cyclic.app/"
+const baseUrl = "https://mealco-server-2.vercel.app"
 axios.defaults.baseURL = baseUrl
 root.render(
   <React.StrictMode>
