@@ -21,7 +21,7 @@ function ProductList({ cart, addItemToCart }) {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:5050",
+        "https://mealco-server-2.vercel.app",
         {},
         { withCredentials: true }
       );

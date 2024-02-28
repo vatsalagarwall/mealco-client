@@ -6,10 +6,13 @@ function PayButton({ cartItems, userId }) {
     console.log("cartItems:", cartItems);
     console.log("userId:", userId);
     axios
-      .post("http://localhost:5050/stripe/create-checkout-session", {
-        cartItems,
-        userId,
-      })
+      .post(
+        "https://mealco-server-2.vercel.app/stripe/create-checkout-session",
+        {
+          cartItems,
+          userId,
+        }
+      )
       .then((res) => {
         if (res.data.url) {
           window.location.href = res.data.url;
